@@ -1,0 +1,498 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#071739;
+    display:flex;
+    color:white;
+}
+
+/* ===========================
+        SIDEBAR
+=========================== */
+
+.sidebar{
+
+    width:250px;
+    height:100vh;
+    background:#0B234F;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:25px;
+    box-shadow:5px 0 20px rgba(0,0,0,.3);
+
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.logo h2{
+
+    color:#00C2FF;
+    font-size:28px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    padding:16px;
+    margin:12px 0;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.sidebar ul li i{
+
+    width:30px;
+
+}
+
+.sidebar ul li:hover{
+
+    background:#00C2FF;
+    color:#071739;
+    transform:translateX(10px);
+
+}
+
+.active{
+
+    background:#00C2FF;
+    color:#071739;
+
+}
+
+/* ===========================
+        MAIN
+=========================== */
+
+.main{
+
+    margin-left:250px;
+    width:calc(100% - 250px);
+    padding:30px;
+
+}
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+
+}
+
+.profile{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.profile img{
+
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:2px solid #00C2FF;
+
+}
+
+.profile i{
+
+    font-size:22px;
+    cursor:pointer;
+
+}
+
+/* ===========================
+       WELCOME
+=========================== */
+
+.welcome{
+
+    background:linear-gradient(135deg,#0F4C81,#0077B6);
+    border-radius:20px;
+    padding:35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+
+}
+
+.welcome h1{
+
+    font-size:35px;
+
+}
+
+.welcome p{
+
+    margin-top:10px;
+
+}
+
+.welcome button{
+
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#0B234F;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.welcome button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+      DASHBOARD CARDS
+=========================== */
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:30px;
+
+}
+
+.card{
+
+    background:#112D4E;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card i{
+
+    font-size:35px;
+    color:#00C2FF;
+    margin-bottom:15px;
+
+}
+
+.card h2{
+
+    font-size:30px;
+    margin-bottom:8px;
+
+}
+
+/* ===========================
+      MIDDLE SECTION
+=========================== */
+
+.middle{
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    margin-bottom:30px;
+
+}
+
+.workout,
+.ai{
+
+    background:#112D4E;
+    padding:25px;
+    border-radius:18px;
+
+}
+
+.workout ul{
+
+    margin-top:20px;
+    list-style:none;
+
+}
+
+.workout li{
+
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+.ai{
+
+    text-align:center;
+
+}
+
+.ai i{
+
+    font-size:70px;
+    color:#00C2FF;
+    margin:25px 0;
+
+}
+
+.ai button{
+
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#00C2FF;
+    color:#071739;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.ai button:hover{
+
+    background:white;
+
+}
+
+/* ===========================
+        BOTTOM
+=========================== */
+
+.bottom{
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    margin-bottom:30px;
+
+}
+
+.diet,
+.water{
+
+    background:#112D4E;
+    padding:25px;
+    border-radius:18px;
+
+}
+
+/* ===========================
+        TABLE
+=========================== */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+
+}
+
+table th{
+
+    background:#00C2FF;
+    color:#071739;
+    padding:12px;
+
+}
+
+table td{
+
+    padding:12px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+/* ===========================
+      WATER CARD
+=========================== */
+
+.water{
+
+    text-align:center;
+
+}
+
+.water h1{
+
+    font-size:45px;
+    margin:25px 0;
+
+}
+
+progress{
+
+    width:100%;
+    height:20px;
+
+}
+
+.water button{
+
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#00C2FF;
+    color:#071739;
+    font-weight:bold;
+    cursor:pointer;
+
+}
+
+/* ===========================
+      PROGRESS GRAPH
+=========================== */
+
+.progress{
+
+    background:#112D4E;
+    border-radius:20px;
+    padding:25px;
+
+}
+
+.graph{
+
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-end;
+    height:250px;
+    margin-top:30px;
+
+}
+
+.bar{
+
+    width:50px;
+    background:linear-gradient(to top,#00C2FF,#38BDF8);
+    border-radius:10px 10px 0 0;
+    transition:.4s;
+
+}
+
+.bar:hover{
+
+    transform:scaleY(1.08);
+
+}
+
+/* ===========================
+      SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00C2FF;
+    border-radius:10px;
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:1000px){
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.middle{
+
+grid-template-columns:1fr;
+
+}
+
+.bottom{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.sidebar{
+
+display:none;
+
+}
+
+.main{
+
+margin-left:0;
+width:100%;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.navbar{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+.welcome{
+
+flex-direction:column;
+text-align:center;
+gap:20px;
+
+}
+
+}

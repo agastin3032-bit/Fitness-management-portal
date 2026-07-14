@@ -1,0 +1,204 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#071739;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0B234F;
+}
+.logo{
+    display: flex;
+    
+}
+
+.logo h2{
+color:#00C2FF;
+margin-left: 10px;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00C2FF;
+}
+
+.hero{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(135deg,#0F4C81,#0077B6);
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:15px;
+}
+
+.hero p{
+width:60%;
+margin:auto;
+line-height:30px;
+}
+
+.muscles{
+width:90%;
+margin:60px auto;
+}
+
+.muscles h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.muscle-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.muscle-card{
+background:#112D4E;
+padding:35px;
+text-align:center;
+border-radius:20px;
+transition:.3s;
+cursor:pointer;
+}
+
+.muscle-card:hover{
+background:#00C2FF;
+color:#071739;
+transform:translateY(-8px);
+}
+
+.muscle-card i{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.plan{
+width:90%;
+margin:60px auto;
+}
+
+.plan h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.plan-box{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.plan-item{
+background:#112D4E;
+padding:25px;
+border-left:5px solid #00C2FF;
+border-radius:15px;
+transition:.3s;
+}
+
+.plan-item:hover{
+transform:translateX(8px);
+}
+
+.summary{
+width:90%;
+margin:60px auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.summary-card{
+background:#112D4E;
+padding:30px;
+text-align:center;
+border-radius:20px;
+}
+
+.summary-card h2{
+margin-bottom:15px;
+color:#00C2FF;
+}
+
+.start{
+text-align:center;
+margin:50px;
+}
+
+.start button{
+padding:18px 50px;
+border:none;
+border-radius:40px;
+background:#00C2FF;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.start button:hover{
+background:white;
+transform:scale(1.05);
+}
+
+@media(max-width:900px){
+
+.muscle-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.plan-box{
+grid-template-columns:1fr;
+}
+
+.summary{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero p{
+width:90%;
+}
+
+.muscle-grid,
+.summary{
+grid-template-columns:1fr;
+}
+
+}
